@@ -1,0 +1,17 @@
+<ion-view view-title="Login" name="login-view">
+  <ion-content class="padding">
+      <div class="list list-inset">
+          <label class="item item-input">
+              <input type="text" placeholder="نام کاربری" ng-model="data.username">
+          </label>
+          <label class="item item-input">
+              <input type="password" placeholder="رمز عبور" ng-model="data.password">
+          </label>
+      </div>
+      <button class="button button-block button-calm" ng-click="login()">ورود</button>
+      <div class="center">
+		<a href="#" ui-sref="tabsController.registration" ><p>عضویت</p></a>
+	</div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,113 @@
+<ion-view title="کالامالا">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="button-bar">
+            <button class="button  button-icon button-block  icon-left ion-heart">10k</button>
+            <button class="button  button-icon button-block  icon-left ion-eye">200k</button>
+            <button class="button  button-icon button-block  icon-left ion-android-share">60k</button>
+        </div>
+
+ 
+        <div class="list card">
+            <div class="item item-divider">گوشی سامسونگ گالکسی ۶ پلاس</div>
+            <div class="item item-body">
+                <div style="text-align:left;">
+                    <ion-gallery ion-gallery-items="items" ion-gallery-row="3" ion-gallery-toggle="true"></ion-gallery>
+                </div>
+                <div>
+                    <p>گوشی همراه سامسونگ ۶ با قابلیت های جدیداین گوشی جدید ترین محصول شرکت سامسونگ می باشد</p>
+
+                    <p>
+                        <strong>Samsung Galaxy S6 Plus</strong>
+                    </p>
+
+                    <p>
+                        <img alt="" title="likes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABcklEQVQ4T6WTP0hCURTGv3P1oYVFtAS1tEm+0aBeDfogItwadKitqDWCoiFqKIiCguaKoKnQpSFwaHhPiHRw9EFji1tDg2SW3hPP0NJUenXHc77vxz3/CP985MQfj0ZdsUSi8t1TB5gT6lKF5SpB+IWsPJFwxT2ytGmLi8Kzx1LOQYg+hnxwszgIZawLO1cFpCbUDWbs//yNzH7GxGhzjkHrejp3SPea2v8mkYeA10k5EiiSRxkkQ1NnCEg6Mde1kqbJGB+ZIhK3fwEwk05GWPVRCXkAvY4gUj77yt1D1SbaEwDjxAmAQIuhdO78a4yaugNg65eQ7XDa2q2PsWYytMAxgVY6QZjpSM/k1mqahk1kgFJjgTMIWmgJYZyGM9Zyy02sBRkQKS1wCVCsAcK4CmWseQJkR4CdzAaDSkEpXYM4UhWzvGHvwKxumuXmn7U9JiM87KVSV5KZGN6XiG4+vrYqq+M13k36e94VN+umVWjX2A+BOXdXipcrBgAAAABJRU5ErkJggg==">10k
+                        <img alt="" title="test" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5ElEQVQ4T7WTvWtTYRTGn/Pe5Ca3NvgxiB1E/4AiCpKkUEwySEFzQxEdIiIqdFMHh07FoYjopg5SwcEPKC4O5l7BpTaVDknq5OCoIDpFyZDQfN73kfdCQlUQtPTdzvuc8+N8Crb5ZJvx2BnA1InCMW3RBRgnRQulq8E3G2vexu8Z/5JBOjt7WEtwA+D7TrT3UvXGok6srXq23Yk0pQBgGpY8rK68+jgEjQCpXP6UcXDYWgwCJ9FTkQWCX0WEIA7aenDLstqNTUnMC+VTtVx6YSAhIJUtXCD0eK3sL4V2xr0fkeB5n5GiCCkKy9C8XCn714yezLhFJdhVKXuPJZnLn1cUu1L2nhjxaHZ2j83BHKAOHNofmzd/X+qduwC+Rwf60fr660YIMXGQgSQzhXNKuNvQjDA1M7NPd+0rpEwYQL1elzYSd0D5EQ2CpS2Ai2F7hyUIGB9Ckjn3gUA/BVUxrDPAso7gUm3Vu27sdCY/pxW6tVX/2aiJ6VzhDMFJh83bQeDs7VvWTUK+gSJUnAiIxQSarU0kFhRZraz53qiJw5Ecz56etKCuiuBtfxy+09Axo7XjY9oadM4KcYTEvdo77/MfY9y6IKmsOw3iJAUhQIEtWqpUXSl9+Osi/c9d7Mwt/EsmPwFL2cdNOXxiRwAAAABJRU5ErkJggg==">25k</p>
+                </div>
+                <div></div>
+		   <label class="item item-input">
+
+                    <span class="input-label">رنگ</span> {{selectedColor}}
+                    <button class="button button-dark" modal-select="" ng-model="selectedColor" options="availableColors" modal-title= رنگ را انتخاب کنید">رنگ  را انتخاب نمایید
+			<div class="option">{{option}}</div>
+                    </button>
+                </label>
+
+
+		   <label class="item item-input">
+
+                    <span class="input-label">گارانتی</span> {{selectedGaranty}}
+                    <button class="button button-dark" modal-select="" ng-model="selectedGaranty" options="garanty" modal-title= گارانتی را انتخاب کنید">گارانتی  را انتخاب نمایید
+			<div class="option">{{option}}</div>
+                    </button>
+                </label>
+
+                <label class="item item-input">
+
+                    <span class="input-label">تعداد</span> {{selectedCount}}
+                    <button class="button button-dark" modal-select="" ng-model="selectedCount" options="count" modal-title= تعداد را انتخاب کنید">تعداد  را انتخاب نمایید
+                    <div class="option">{{option}}</div>
+                    </button>
+                </label>
+
+            </div>
+            <div class="item item-divider">قیمت : ۲۰۰۰۰۰۰۰۰</div>
+        </div>
+        <div>
+            <p>سلام دوستان عزیز این محصول جدید امروز برامون رسیده اولین صد خریدار این محصول وسایل جانبی شامل گوشی و محافظ صفحه رو برایگان دریافت میکنن</p>
+        </div>
+			<button class="button button-dark" ui-sref="tabsController.userComment">نظرات کاربران</button> 
+        <form class="list"></form>
+        <div class="list card">
+            <div class="item item-divider">نظرسنجی کالامالا</div>
+            <div class="item item-body">
+                <div>
+                    <p>با شرکت در این نظر سنجی یکی از برندگان قرعه کشی گوشی سامسونگ ما باشید</p>
+
+                    <p>عرضه چه محصولاتی را بیشتر می پسندید؟</p>
+                </div>
+                <form class="list">
+                    <ion-radio>گوشی همراه</ion-radio>
+                    <ion-radio>لوازم خانگی</ion-radio>
+                    <ion-radio>لوازم آرایش</ion-radio>
+                </form>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+        <li class="mfb-component__wrap">
+            <a href="#" class="mfb-component__button--main">
+                <i class="mfb-component__main-icon--resting ion-plus-round"></i>
+                <i class="mfb-component__main-icon--active ion-close-round"></i>
+            </a>
+            <ul class="mfb-component__list">
+                <li>
+                    <a href="#" data-mfb-label="اضافه کردن به سبد خرید" class="mfb-component__button--child" ui-sref="">
+                        <i class="mfb-component__child-icon ion-android-cart"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-mfb-label="تماس با فروشنده" class="mfb-component__button--child">
+                        <i class="mfb-component__child-icon ion-ios-telephone"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-mfb-label="ارسال به دوستان" class="mfb-component__button--child">
+                        <i class="mfb-component__child-icon ion-forward"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#"
+                       data-mfb-label="اضافه کردن به علاقه مندی ها" class="mfb-component__button--child">
+                        <i class="mfb-component__child-icon ion-ios-heart"></i>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</ion-view>
+

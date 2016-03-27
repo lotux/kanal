@@ -1,0 +1,17 @@
+<ion-view >
+    <ion-content overflow-scroll="true" padding="false" class="has-header">
+        <h2>(سبد خرید فروشگاه کالامالا(1</h2>
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ui-sref="tabsController.page5">		
+	                <img src="http://file.digikala.com/Digikala/Image/Webstore/Product/P_67297/180/Mobile-Samsung-Galaxy-S-6-Edge-32GB-SM-G925Fa98b7c.jpg">
+	                <h2>Samsung Galaxy S6 Edge 32GB SM-G925F Mobile Phone</h2>
+	                <p>قيمت (تومان):2,000,000</p>
+            </ion-item>
+        </ion-list>
+      <button class="button button-block button-calm" ui-sref="">تکمیل فرآیند خرید</button>
+
+
+    </ion-content>
+
+</ion-view>
+

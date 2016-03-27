@@ -1,13 +1,18 @@
 <ion-view title="Tabs Controller">
     <ion-tabs class="tabs-stable tabs-icon-top">
+<!--
         <ion-tab title="Contacts" icon="ion-android-contacts" href="#/page1/contacts">
             <ion-nav-view name="tab1"></ion-nav-view>
         </ion-tab>
-        <ion-tab title="Channels" icon="ion-android-chat" href="#/page1/channels">
+-->
+        <ion-tab title="Favorite Channels" icon="ion-ios-heart" ui-sref="tabsController.joinedChannels">
             <ion-nav-view name="tab2"></ion-nav-view>
         </ion-tab>
-        <ion-tab title="Settings" icon="ion-ios-settings" href="#/page1/settings">
-            <ion-nav-view name="tab3"></ion-nav-view>
+        <ion-tab title="Channels By Category" icon="ion-ios-list" href="#/page1/channelsByCategory">
+            <ion-nav-view name="channelsByCategory"></ion-nav-view>
+        </ion-tab>
+        <ion-tab >
+            <ion-nav-view name="general"></ion-nav-view>
         </ion-tab>
     </ion-tabs>
 </ion-view>

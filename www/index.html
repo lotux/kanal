@@ -6,7 +6,13 @@
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <script src="lib/ionic/js/ionic.bundle.js"></script>
+      <link href="lib/ionic/css/mfb.css" rel="stylesheet">
+      <link href="lib/ionic/css/ion-gallery.css" rel="stylesheet">
+
+      <script src="lib/ionic/js/ionic.bundle.js"></script>
+      <script src="lib/ionic/js/mfb.js"></script>
+      <script src="https://rawgit.com/inmagik/ionic-modal-select/master/dist/ionic-modal-select.js"></script>
+      <script src="lib/ionic/js/ion-gallery.min.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -20,20 +26,56 @@
     <script src="js/routes.js"></script>
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
+    <script src="js/templates.js"></script>
 
-    <!-- Only required for Tab projects w/ pages in multiple tabs 
-    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
-    -->
+
+
+      <!-- Only required for Tab projects w/ pages in multiple tabs
+      <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+      -->
 
   </head>
-  <body ng-app="app" animation="slide-left-right-ios7">
-  <div>
-    <div>
-        <ion-nav-bar class="bar-stable">
-            <ion-nav-back-button class="button-icon icon ion-ios-arrow-back">Back</ion-nav-back-button>
-        </ion-nav-bar>
-        <ion-nav-view></ion-nav-view>
-    </div>
-</div>
+  <body ng-app="app" animation="slide-left-right-ios7" ng-controller="mainCtrl">
+      <ion-side-menus>
+        <!--center content -->
+        <ion-side-menu-content>
+            <ion-header-bar class="bar-stable">
+                <h1 class="title">kannal</h1>
+                <button class="button button-icon" ng-click="toggleLeftSideBar()">
+                    <i class="icon ion-navicon"></i>
+                </button>
+                <button class="button button-icon"   ui-sref="tabsController.newChannel" >
+                    <i class="icon ion-plus-round" ></i>
+                </button>
+
+            </ion-header-bar>
+
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu-content>
+
+        <ion-side-menu side="left">
+            <ion-header-bar class="bar-stable">
+                <h1 class="title"></h1>
+                </button>
+            </ion-header-bar>
+            <ion-content scroll="false">
+                <ion-list>
+                    <ion-item><a href="#" ui-sref="tabsController.login">ورود / ثبت نام</a></ion-item>
+                    <ion-item>خریدهای گذشته</ion-item>
+                    <ion-item>تنظیمات</ion-item>
+                    <ion-item>مخاطبین</ion-item>
+                    <ion-item>شهر پیش فرض : تهران</ion-item>
+                    <ion-item>درباره ما</ion-item>
+                    <ion-item>تماس با ما</ion-item>
+                    <ion-item>قوانین</ion-item>
+
+                </ion-list>
+            </ion-content>
+        </ion-side-menu>
+
+    </ion-side-menus>
+
   </body>
+
+
 </html>
