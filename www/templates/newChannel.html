@@ -11,6 +11,25 @@
                     <span class="input-label">عنوان کانال را وارد کنید</span>
                     <input type="text" placeholder="عنوان کانال را وارد کنید. مثلا نام فروشگاه یا شرکت یا موسسه " ng-model="channel.title" >
                 </label>
+                <label class="item item-input">
+                    <span class="input-label">استان</span>
+                    <span class="input-label"></span> {{selectedState}}
+                    <button class="button button-dark" modal-select="" ng-model="selectedState" options="states" modal-title=استان  را انتخاب کنید">استان را انتخاب نمایید<div class="option">
+                    {{option}}
+                </div>
+                  </button>
+                </label>        
+
+                <label class="item item-input">
+                    <span class="input-label">شهر</span>
+                    <span class="input-label"></span> {{selectedCity}}
+                    <button class="button button-dark" modal-select="" ng-model="selectedCity" options="cities" modal-title=شهر  را انتخاب کنید">شهر را انتخاب نمایید<div class="option">
+                    {{option}}
+                </div>
+                  </button>
+                </label>        
+               	
+               	   
                 <label class="item item-input item-floating-label">
                     <span class="input-label">آدرس</span>
                     <input type="text" placeholder="آدرس" ng-model="channel.address" >

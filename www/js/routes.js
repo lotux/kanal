@@ -12,7 +12,7 @@ angular.module('app.routes', [])
             .state('tabsController.contacts', {
                 url: '/contacts',
                 views: {
-                    'tab1': {
+                    'tab2': {
                         templateUrl: 'templates/contacts.html',
                         controller: 'contactsCtrl'
                     }

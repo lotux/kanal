@@ -37,6 +37,21 @@ angular.module('app.controllers', [])
             "رهن و اجاره"
         ];
 
+  $scope.states= [
+            "تهران",
+            "فارس",
+            "خراسان رضوی",
+            "کرمان",
+           "یزد"
+        ];
+ $scope.cities= [
+            "تهران",
+            "شیراز",
+            "مشهد",
+            "کرمان",
+           "یزد"
+        ];
+
     })
 
 .controller('channelsByCategoryCtrl', function($scope) {
