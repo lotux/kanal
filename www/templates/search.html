@@ -1,0 +1,50 @@
+<ion-view ng-controller="channelsCtrl">
+    <ion-content overflow-scroll="true"  class="has-header">
+        <h2>جستجو</h2>
+        <form ng-submit="search()">
+            <div class="list">		
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">به دنبال چه میگردید ؟</span>
+                    <input type="text" value="موبایل سامسونگ" placeholder="به دنبال چه میگردید ؟" ng-model="goods.title" >                   
+
+                </label>
+		
+            </div>
+            <div class="padding">
+                <button type="submit" class="button button-block button-dark">جستجو</button>
+            </div>
+      
+        </form>
+               <ion-list>
+            <ion-item class="item-thumbnail-left">		
+	                <img src="http://file.digikala.com/Digikala/Image/Webstore/Product/P_67297/180/Mobile-Samsung-Galaxy-S-6-Edge-32GB-SM-G925Fa98b7c.jpg">
+	                <h2><a  ui-sref="tabsController.page5">Samsung Galaxy S6 Edge 32GB SM-G925F Mobile Phone</a></h2>
+	                <p>قيمت (تومان):2,000,000</p>
+                <button class="button button-calm" ui-sref="tabsController.kalamalaItems">
+		  #kalamala
+		</button>
+
+            </ion-item>
+            <ion-item class="item-thumbnail-left">
+                <img src="http://file.digikala.com/Digikala/Image/Webstore/Product/P_111158/350/Mobile-Phone-Samsung-Galaxy-A7-201602c3f4.jpg">
+                <h2><a  ui-sref="tabsController.page5">
+                Samsung Galaxy A7 (2016) Dual SIM SM-A710FD Mobile Phone</a></h2>               
+                <p>قيمت (تومان):1,399,000</p>
+                <button class="button button-calm" ui-sref="tabsController.kalamalaItems">
+		  #kalamala
+		</button>
+            </ion-item>
+            <ion-item class="item-thumbnail-left">
+                <img src="http://file.digikala.com/Digikala/Image/Webstore/Product/P_128415/350/Mobile-Phone-Samsung-Galaxy-A8-SM-A800I084524.jpg">
+               <a  class="h5" ui-sref="tabsController.page5">
+                Samsung Galaxy A8 SM-A800I Dual SIM Mobile Phone
+                <p>گوشی موبایل سامسونگ مدل Galaxy A8 SM-A800I دو سیم کارت</p>	            
+                </a>
+                <p>قيمت (تومان):1,560,000</p>
+                <button class="button button-calm" ui-sref="tabsController.kalamalaItems">
+		  #kalamala
+		</button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

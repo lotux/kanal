@@ -5,11 +5,15 @@
             <ion-nav-view name="tab1"></ion-nav-view>
         </ion-tab>
 -->
-        <ion-tab title="Favorite Channels" icon="ion-ios-heart" ui-sref="tabsController.joinedChannels">
-            <ion-nav-view name="tab2"></ion-nav-view>
+        <ion-tab title="Home" icon="ion-ios-home" href="home" ui-sref="tabsController.channels">
+            <ion-nav-view name="home"></ion-nav-view>
         </ion-tab>
-        <ion-tab title="Channels By Category" icon="ion-ios-list" href="#/page1/channelsByCategory">
-            <ion-nav-view name="channelsByCategory"></ion-nav-view>
+        <ion-tab title="Chat" icon="ion-ios-chatbubble" ui-sref="tabsController.chat">
+            <ion-nav-view name="chat"></ion-nav-view>
+        </ion-tab>
+
+        <ion-tab title="Search" icon="ion-ios-search-strong" ui-sref="tabsController.search">
+            <ion-nav-view name="search"></ion-nav-view>
         </ion-tab>
         <ion-tab >
             <ion-nav-view name="general"></ion-nav-view>

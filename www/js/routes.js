@@ -12,7 +12,7 @@ angular.module('app.routes', [])
             .state('tabsController.contacts', {
                 url: '/contacts',
                 views: {
-                    'tab2': {
+                    'home': {
                         templateUrl: 'templates/contacts.html',
                         controller: 'contactsCtrl'
                     }
@@ -22,7 +22,7 @@ angular.module('app.routes', [])
             .state('tabsController.channels', {
                 url: '/channels',
                 views: {
-                    'tab2': {
+                    'home': {
                         templateUrl: 'templates/channels.html',
                         controller: 'channelsCtrl'
                     }
@@ -39,12 +39,12 @@ angular.module('app.routes', [])
                 }
             })
 
-            .state('tabsController.channelsByCategory', {
-                url: '/channelsByCategory',
+            .state('tabsController.home', {
+                url: '/home',
                 views: {
-                    'channelsByCategory': {
-                        templateUrl: 'templates/channelsByCategory.html',
-                        controller: 'channelsByCategoryCtrl'
+                    'home': {
+                        templateUrl: 'templates/home.html',
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -69,7 +69,7 @@ angular.module('app.routes', [])
             .state('tabsController.page5', {
                 url: '/kalamala',
                 views: {
-                    'tab2': {
+                    'home': {
                         templateUrl: 'templates/page5.html',
                         controller: 'page5Ctrl'
                     }
@@ -79,7 +79,7 @@ angular.module('app.routes', [])
 	.state('tabsController.joinedChannels', {
                 url: '/joinedChannels',
                 views: {
-                    'tab2': {
+                    'home': {
                         templateUrl: 'templates/joinedChannels.html',
                         controller: 'page5Ctrl'
                     }
@@ -90,7 +90,7 @@ angular.module('app.routes', [])
 	    .state('tabsController.kalamalaItems', {
                 url: '/kalamalaItems',
                 views: {
-                    'tab2': {
+                    'home': {
                         templateUrl: 'templates/kalamalaItems.html',
                         controller: 'page5Ctrl'
                     }
@@ -100,9 +100,9 @@ angular.module('app.routes', [])
             .state('tabsController.maskan', {
                 url: '/maskan',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/maskan.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -110,9 +110,9 @@ angular.module('app.routes', [])
             .state('tabsController.userComment', {
                 url: '/userComment',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/userComment.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -120,9 +120,18 @@ angular.module('app.routes', [])
             .state('tabsController.digitalStores', {
                 url: '/digitalStores',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/digitalStores.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
+                    }
+                }
+            })
+            .state('tabsController.search', {
+                url: '/search',
+                views: {
+                    'search': {
+                        templateUrl: 'templates/search.html',
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -130,9 +139,9 @@ angular.module('app.routes', [])
             .state('tabsController.digitalSearch', {
                 url: '/digitalSearch',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/digitalSearch.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -140,9 +149,9 @@ angular.module('app.routes', [])
             .state('tabsController.maskanItem1', {
                 url: '/maskanItem1',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/maskanItem1.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -150,9 +159,9 @@ angular.module('app.routes', [])
             .state('tabsController.apartment1', {
                 url: '/apartment1',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/apartment1.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -160,9 +169,9 @@ angular.module('app.routes', [])
             .state('tabsController.maskanSearch', {
                 url: '/maskan/search',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/maskanSearch.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -170,27 +179,27 @@ angular.module('app.routes', [])
       .state('tabsController.login', {
                 url: '/login',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/login.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
    .state('tabsController.registration', {
                 url: '/registration',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/registration.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
    .state('tabsController.kalamalaBasket', {
                 url: '/kalamalaBasket',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/kalamalaBasket.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
@@ -198,23 +207,32 @@ angular.module('app.routes', [])
    .state('tabsController.addressVerification', {
                 url: '/addressVerification',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/addressVerification.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
                     }
                 }
             })
    .state('tabsController.payMethod', {
                 url: '/payMethod',
                 views: {
-                    'channelsByCategory': {
+                    'home': {
                         templateUrl: 'templates/payMethod.html',
-                        controller: 'channelsByCategoryCtrl'
+                        controller: 'page5Ctrl'
+                    }
+                }
+            })
+   .state('tabsController.chat', {
+                url: '/chat',
+                views: {
+                    'chat': {
+                        templateUrl: 'templates/chat.html',
+                        controller: 'page5Ctrl'
                     }
                 }
             })
 
-        $urlRouterProvider.otherwise('/page1/joinedChannels')
+        $urlRouterProvider.otherwise('/page1/channels')
 
 
     });
